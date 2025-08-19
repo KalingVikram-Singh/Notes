@@ -1,0 +1,270 @@
+
+     Program PWSCF v.6.4.1 starts on 19Aug2025 at 20:53:48 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on       8 processor cores
+     Number of MPI processes:                 1
+     Threads/MPI process:                     8
+
+     MPI processes distributed on     1 nodes
+     Waiting for input...
+     Reading input from standard input
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+
+     Atomic positions and unit cell read from directory:
+     .\graphene.save\
+
+               file C.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  2S 2P renormalized
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+     [opt_tetra]  Optimized tetrahedron method is used.
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum         595     241     85                35435     8973    1713
+
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.6540  a.u.
+     unit-cell volume          =     261.8973 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+     number of electrons       =         8.00
+     number of Kohn-Sham states=            8
+     kinetic-energy cutoff     =      40.0000  Ry
+     charge density cutoff     =     400.0000  Ry
+     Exchange-correlation      = SLA PW PBX PBC ( 1  4  3  4 0 0)
+
+     celldm(1)=   4.654000  celldm(2)=   0.000000  celldm(3)=   3.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   3.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.333333 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     .\C.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: d6cda0f428f4bfa5e6956a1475abca27
+     Pseudo is Projector augmented-wave + core cor, Zval =  4.0
+     Generated using "atomic" code by A. Dal Corso v.5.1
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1073 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01070     C ( 1.00)
+
+     24 Sym. Ops., with inversion, found (12 have fractional translation)
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (   0.0000000   0.0000000   0.0000000  )
+         2           C   tau(   2) = (   0.0000000   0.5773503   0.0000000  )
+
+     number of k points=    19 (tetrahedron method)
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.0138889
+        k(    2) = (   0.0000000   0.0962250   0.0000000), wk =   0.0833333
+        k(    3) = (   0.0000000   0.1924501   0.0000000), wk =   0.0833333
+        k(    4) = (   0.0000000   0.2886751   0.0000000), wk =   0.0833333
+        k(    5) = (   0.0000000   0.3849002   0.0000000), wk =   0.0833333
+        k(    6) = (   0.0000000   0.4811252   0.0000000), wk =   0.0833333
+        k(    7) = (   0.0000000  -0.5773503   0.0000000), wk =   0.0416667
+        k(    8) = (   0.0833333   0.1443376   0.0000000), wk =   0.0833333
+        k(    9) = (   0.0833333   0.2405626   0.0000000), wk =   0.1666667
+        k(   10) = (   0.0833333   0.3367877   0.0000000), wk =   0.1666667
+        k(   11) = (   0.0833333   0.4330127   0.0000000), wk =   0.1666667
+        k(   12) = (   0.0833333   0.5292377   0.0000000), wk =   0.1666667
+        k(   13) = (   0.1666667   0.2886751   0.0000000), wk =   0.0833333
+        k(   14) = (   0.1666667   0.3849002   0.0000000), wk =   0.1666667
+        k(   15) = (   0.1666667   0.4811252   0.0000000), wk =   0.1666667
+        k(   16) = (   0.1666667   0.5773503   0.0000000), wk =   0.0833333
+        k(   17) = (   0.2500000   0.4330127   0.0000000), wk =   0.0833333
+        k(   18) = (   0.2500000   0.5292377   0.0000000), wk =   0.1666667
+        k(   19) = (   0.3333333   0.5773503   0.0000000), wk =   0.0277778
+
+     Dense  grid:    35435 G-vectors     FFT dimensions: (  30,  30,  90)
+
+     Smooth grid:     8973 G-vectors     FFT dimensions: (  24,  24,  60)
+
+     Estimated max dynamical RAM per process >      35.37 MB
+
+     Check: negative core charge=   -0.000004
+
+     The potential is recalculated from file :
+     .\graphene.save\charge-density
+
+
+     negative rho (up, down):  9.529E-06 0.000E+00
+     Starting wfcs are    8 randomized atomic wfcs
+     Checking if some PAW data can be deallocated... 
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+
+     ethr =  1.25E-10,  avg # of iterations = 18.9
+
+     total cpu time spent up to now is        3.1 secs
+
+     End of band structure calculation
+
+          k = 0.0000 0.0000 0.0000 (  1133 PWs)   bands (ev):
+
+   -18.6519  -6.7398  -2.1422  -2.1422   3.7458   7.1205   9.2647   9.2647
+
+          k = 0.0000 0.0962 0.0000 (  1122 PWs)   bands (ev):
+
+   -18.4875  -6.5432  -2.7939  -2.4823   3.9696   7.3345   9.2793   9.6498
+
+          k = 0.0000 0.1925 0.0000 (  1132 PWs)   bands (ev):
+
+   -17.9963  -5.9587  -4.4362  -3.2783   4.6409   7.9687   9.2395  10.2885
+
+          k = 0.0000 0.2887 0.0000 (  1118 PWs)   bands (ev):
+
+   -17.1841  -6.5398  -5.0055  -4.1619   5.7582   8.1270   8.9823   9.1010
+
+          k = 0.0000 0.3849 0.0000 (  1118 PWs)   bands (ev):
+
+   -16.0630  -8.7486  -4.8983  -3.7340   5.8401   7.3145   8.6680  10.5208
+
+          k = 0.0000 0.4811 0.0000 (  1128 PWs)   bands (ev):
+
+   -14.6637 -10.8544  -5.3734  -2.3073   3.6948   8.4109   9.3316  12.3163
+
+          k = 0.0000-0.5774 0.0000 (  1120 PWs)   bands (ev):
+
+   -13.3942 -12.3672  -5.5366  -1.4600   2.5931   8.3341  11.6595  11.7997
+
+          k = 0.0833 0.1443 0.0000 (  1123 PWs)   bands (ev):
+
+   -18.1597  -6.1524  -3.8306  -3.1628   4.4173   7.7600   9.5481  10.1139
+
+          k = 0.0833 0.2406 0.0000 (  1115 PWs)   bands (ev):
+
+   -17.5081  -5.5441  -5.3825  -4.1646   5.3122   8.5758   9.0586   9.7322
+
+          k = 0.0833 0.3368 0.0000 (  1120 PWs)   bands (ev):
+
+   -16.5412  -7.6225  -5.0545  -4.2637   6.6512   6.8617   9.5201   9.8646
+
+          k = 0.0833 0.4330 0.0000 (  1117 PWs)   bands (ev):
+
+   -15.2780  -9.7510  -5.6917  -2.8802   4.6454   8.4214   9.2560  11.4549
+
+          k = 0.0833 0.5292 0.0000 (  1107 PWs)   bands (ev):
+
+   -13.7941 -11.6983  -6.0214  -1.5669   2.8706   9.0737  10.6388  13.1911
+
+          k = 0.1667 0.2887 0.0000 (  1127 PWs)   bands (ev):
+
+   -16.7018  -6.8770  -5.5323  -4.4430   6.4295   7.3100   9.6101  10.9058
+
+          k = 0.1667 0.3849 0.0000 (  1118 PWs)   bands (ev):
+
+   -15.5914  -8.6087  -6.5918  -3.1863   5.3564   7.9863  10.9269  11.1712
+
+          k = 0.1667 0.4811 0.0000 (  1115 PWs)   bands (ev):
+
+   -14.2122 -10.5250  -7.1692  -1.7555   3.4381   9.9648  10.9844  12.2597
+
+          k = 0.1667 0.5774 0.0000 (  1104 PWs)   bands (ev):
+
+   -12.9724 -11.9660  -7.3544  -0.8599   2.3663  10.8851  12.2454  12.4212
+
+          k = 0.2500 0.4330 0.0000 (  1111 PWs)   bands (ev):
+
+   -14.3603  -9.6449  -8.0809  -1.8397   3.7370   9.7478  11.8464  13.1425
+
+          k = 0.2500 0.5292 0.0000 (  1107 PWs)   bands (ev):
+
+   -12.9340 -11.0708  -8.7901  -0.4500   2.2121  11.8795  11.9575  13.1413
+
+          k = 0.3333 0.5774 0.0000 (  1137 PWs)   bands (ev):
+
+   -11.7130 -11.7130  -9.6918   0.9096   0.9096  11.5868  13.6360  13.6360
+
+     the Fermi energy is     0.9101 ev
+
+     Writing output data file graphene.save\
+
+     init_run     :      0.59s CPU      0.44s WALL (       1 calls)
+     electrons    :      5.39s CPU      1.56s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     potinit      :      0.23s CPU      0.08s WALL (       1 calls)
+     hinit0       :      0.28s CPU      0.30s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :      5.36s CPU      1.54s WALL (       1 calls)
+     v_of_rho     :      0.11s CPU      0.02s WALL (       1 calls)
+     newd         :      0.03s CPU      0.02s WALL (       1 calls)
+     PAW_pot      :      0.12s CPU      0.05s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.00s CPU      0.00s WALL (      19 calls)
+     cegterg      :      4.84s CPU      1.40s WALL (      27 calls)
+
+     Called by sum_band:
+
+     Called by *egterg:
+     h_psi        :      4.52s CPU      1.24s WALL (     405 calls)
+     s_psi        :      0.00s CPU      0.00s WALL (     405 calls)
+     g_psi        :      0.08s CPU      0.03s WALL (     359 calls)
+     cdiaghg      :      0.00s CPU      0.05s WALL (     378 calls)
+
+     Called by h_psi:
+     h_psi:pot    :      4.30s CPU      1.21s WALL (     405 calls)
+     h_psi:calbec :      0.00s CPU      0.02s WALL (     405 calls)
+     vloc_psi     :      4.30s CPU      1.18s WALL (     405 calls)
+     add_vuspsi   :      0.00s CPU      0.01s WALL (     405 calls)
+
+     General routines
+     calbec       :      0.00s CPU      0.02s WALL (     405 calls)
+     fft          :      0.00s CPU      0.01s WALL (      13 calls)
+     ffts         :      0.00s CPU      0.00s WALL (       1 calls)
+     fftw         :      0.05s CPU      0.35s WALL (    3962 calls)
+     interpolate  :      0.00s CPU      0.00s WALL (       1 calls)
+     davcio       :      0.00s CPU      0.00s WALL (      38 calls)
+
+     Parallel routines
+
+     PWSCF        :      7.23s CPU      3.19s WALL
+
+
+   This run was terminated on:  20:53:51  19Aug2025            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
