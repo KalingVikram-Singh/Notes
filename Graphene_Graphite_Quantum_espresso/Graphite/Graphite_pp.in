@@ -1,0 +1,7 @@
+&bands
+  prefix          = 'bulk',
+  outdir          = '.',
+  filband         = 'bands.dat',
+/
+
+plotband.in

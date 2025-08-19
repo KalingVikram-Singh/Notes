@@ -1,0 +1,60 @@
+
+     Program BANDS v.6.4.1 starts on 19Aug2025 at 21:59:30 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on       8 processor cores
+     Number of MPI processes:                 1
+     Threads/MPI process:                     8
+
+     MPI processes distributed on     1 nodes
+
+     Reading data from directory:
+     .\bulk.save\
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation      = PBE ( 1  4  3  4 0 0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+               file C.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  2S 2P renormalized
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum         721     241     85                39467     7643    1467
+
+     Generating pointlists ...
+     new r_m :   0.2382 (alat units)  1.1062 (a.u.) for type    1
+
+     Check: negative core charge=   -0.000003
+     high-symmetry point:  0.3333 0.5773 0.0000   x coordinate   0.0000
+     high-symmetry point:  0.0000 0.0000 0.0000   x coordinate   0.6667
+     high-symmetry point:  0.5000 0.2887 0.0000   x coordinate   1.2440
+     high-symmetry point:  0.3333 0.5773 0.0000   x coordinate   1.5773
+     high-symmetry point:  0.3333 0.5773 0.1950   x coordinate   1.7723
+     high-symmetry point:  0.0000 0.0000 0.1950   x coordinate   2.4390
+     high-symmetry point:  0.5000 0.2887 0.1950   x coordinate   3.0163
+     high-symmetry point:  0.3333 0.5773 0.1950   x coordinate   3.3497
+
+     Plottable bands (eV) written to file bands.dat.gnu
+     Bands written to file bands.dat
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine smallgk (1):
+      Not a group
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+job aborted:
+[ranks] message
+
+[0] application aborted
+aborting MPI_COMM_WORLD (comm=0x44000000), error 1, comm rank 0
